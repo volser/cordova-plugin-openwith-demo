@@ -10,7 +10,7 @@
     "author": "Apache Cordova Team",
     "license": "Apache-2.0",
     "dependencies": {
-        "cc.fovea.cordova.openwith": "file:///Users/jeko/Documents/cordova-plugin-openwith",
+        "cc.fovea.cordova.openwith": "file:../cordova-plugin-openwith",
         "cordova-android": "^6.2.3",
         "cordova-ios": "^4.4.0",
         "cordova-plugin-console": "^1.1.0",
@@ -19,7 +19,15 @@
     "cordova": {
         "plugins": {
             "cordova-plugin-whitelist": {},
-            "cordova-plugin-console": {}
-        }
+            "cordova-plugin-console": {},
+            "cc.fovea.cordova.openwith": {
+                "ANDROID_MIME_TYPE": "*/*",
+                "ANDROID_EXTRA_ACTIONS": " "
+            }
+        },
+        "platforms": [
+            "ios",
+            "android"
+        ]
     }
 }
